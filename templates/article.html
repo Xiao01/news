@@ -1,0 +1,24 @@
+{\rtf1\ansi\ansicpg936\cocoartf1671\cocoasubrtf500
+{\fonttbl\f0\froman\fcharset0 Times-Roman;\f1\froman\fcharset0 Times-Bold;\f2\fswiss\fcharset0 Helvetica;
+}
+{\colortbl;\red255\green255\blue255;\red0\green0\blue0;\red0\green0\blue233;}
+{\*\expandedcolortbl;;\cssrgb\c0\c0\c0;\cssrgb\c0\c0\c93333;}
+\vieww10800\viewh8400\viewkind0
+\deftab720
+\pard\pardeftab720\sl280\partightenfactor0
+
+\f0\fs24 \cf2 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 \{% extends 'base.html' %\} \{% load staticfiles %\} \{% block left_content %\}\
+\pard\pardeftab720\sl440\sa298\partightenfactor0
+
+\f1\b\fs36 \cf2 \{\{ article.title \}\}\
+\pard\pardeftab720\sl280\partightenfactor0
+
+\f0\b0\fs24 \cf2 \{\{ article.user.username \}\} \cf3 \ul \ulc3 \strokec3 \{\{ article.item.title \}\}\cf2 \ulnone \strokec2  \{\{ article.publish_date | date:'Y-m-d' \}\} \
+\pard\pardeftab720\sl280\sa240\partightenfactor0
+\cf2 \{\{ article.content| safe \}\}\
+\pard\pardeftab720\sl280\partightenfactor0
+\cf2 \{% for tag in article.tags.all %\} {\field{\*\fldinst{HYPERLINK "file:///Users/xjq/PycharmProjects/django_demos/news/templates/%7B%25%20url%20'tag'%20%25%7D?tagid=%7B%7B%20tag.id%20%7D%7D"}}{\fldrslt \cf3 \ul \ulc3 \strokec3 \{\{ tag.name \}\}\'a0\'a0}} \{% endfor %\} \
+\{% endblock %\}
+\f2 \cf0 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {{\NeXTGraphic base.html \width640 \height640 \appleattachmentpadding0 \appleembedtype0 \appleaqc
+}¬}}
